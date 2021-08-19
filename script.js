@@ -19,6 +19,7 @@ function workdayCalendar(){
     //creating the divs with class = hour
     var hour = document.createElement('div');
     hour.classList.add('hour', 'col-2');
+    hour.setAttribute('id', i+'hour');
     var text = document.createTextNode(currentHour);
     hour.appendChild(text);
 
@@ -28,7 +29,7 @@ function workdayCalendar(){
 
     //creating <textarea> so user can input their text
     var userInput = document.createElement('textarea');
-    userInput.classList.add('flex-fill');
+    userInput.classList.add('flex-fill', 'text-area'+i);
 
 
     // creating the save button with class = saveBtn
@@ -57,16 +58,29 @@ function workdayCalendar(){
     }
 
 }
+savedStuff();
 }   
 
 //code to save into local storage
-var save_button = document.getElementsByTagName('button');
-save_button.onclick = saveStuff;
+$(document).ready(function () {
+    // saveBtn click listener 
+    $(".saveBtn").on("click", function () {
+        // Get nearby values of the description in JQuery
+        // var text = $(this).siblings().children().value;
+        var time = $(this).siblings().attr("id");
+        var text = $(this).siblings().find("textarea").val();
+        console.log(text)
 
-function saveStuff(){
-    var input = document.getElementsByTagName('textarea');
-    localStorage.setItem('to-do', input.value);
-    var inputValue = localStorage.getItem('to-do');
+        // Save text in local storage
+        localStorage.setItem(time, text);
+    })
+}, )
+
+//code to display local storage if it exists
+function savedStuff(){
+    for(i = 9; i <= 17; i++){
+        $(".text-area"+i).val(localStorage.getItem(i+"hour"))
+    }
 }
 
 
