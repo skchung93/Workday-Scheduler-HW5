@@ -1,22 +1,35 @@
-This is Homework Number 5 for the UW Coding Bootcamp.
+# **Workday Scheduler**
 
-User Story</br>
-AS AN employee with a busy schedule</br>
-I WANT to add important events to a daily planner</br>
-SO THAT I can manage my time effectively</br>
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Acceptance Criteria</br>
-GIVEN I am using a daily planner to create a schedule</br>
-WHEN I open the planner</br>
-THEN the current day is displayed at the top of the calendar</br>
-WHEN I scroll down</br>
-THEN I am presented with timeblocks for standard business hours</br>
-WHEN I view the timeblocks for that day</br>
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future</br>
-WHEN I click into a timeblock</br>
-THEN I can enter an event</br>
-WHEN I click the save button for that timeblock</br>
-THEN the text for that event is saved in local storage</br>
-WHEN I refresh the page</br>
+### Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contribution)
+- [Test](#test)
+- [License](#license)
+- [Email & Github](#contact)
 
-Live Application: https://skchung93.github.io/Workday-Scheduler-HW5/
+### DESCRIPTION <a name="description"></a>
+This is javascript based project that allows a user to view and schedule their day between 8 AM and 5 PM. Once that time passes, the container will change colors.
+
+### Installation Instructions <a name="introduction"></a>
+Download or clone this repository, and then push it into your favorite web hosting site. Either that or check it out on the deployed application link https://skchung93.github.io/Workday-Scheduler-HW5/
+
+### Usage Guide <a name="usage"></a>
+Go to the deployed application link: https://skchung93.github.io/Workday-Scheduler-HW5/, and enter in your daily tasks during their scheduled hours.
+
+### How to Contribute <a name="contribution"></a>
+If you'd like to contribute please send an email to SKCHUNG93@Gmail.com or message me on github.
+
+### How to Test the Application <a name="test"></a>
+Have fun testing out the code :)
+
+### Licenses <a name="license"></a>
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+(https://opensource.org/licenses/MIT)
+
+#### Email & Github <a name="contact"></a>
+SKCHUNG93@GMAIL.COM </br>
+https://github.com/skchung93/  
